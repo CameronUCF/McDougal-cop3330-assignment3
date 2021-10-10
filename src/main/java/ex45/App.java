@@ -19,7 +19,7 @@ public class App
             Scanner scanner = new Scanner(file);
 
             while(scanner.hasNextLine())
-                sb.append(scanner.nextLine());
+                sb.append(scanner.nextLine() + ' ');
             scanner.close();
 
             String replaced = Pattern.compile("utilize").matcher(sb).replaceAll("use");
