@@ -15,7 +15,6 @@ public class App
     public static void main( String[] args )
     {
         int index = -1;
-        boolean found = false;
         Scanner scanner = new Scanner(System.in);
         ProductList products = LoadJSON("./src/main/java/ex44/exercise44_input.json");
 

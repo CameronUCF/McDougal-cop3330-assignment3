@@ -25,8 +25,6 @@ public class App
                 sb.append(scanner.nextLine() + ' ');
             scanner.close();
 
-            System.out.println(sb);
-
             Map<String, Integer> freq = FindFrequency(sb.toString());
 
             PrintMap(freq);

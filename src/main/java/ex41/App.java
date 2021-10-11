@@ -15,7 +15,6 @@ public class App
     public static void main( String[] args )
     {
         ArrayList<String> namesList = readNames("./src/main/java/ex41/exercise41_input.txt");
-        Collections.sort(namesList);
         printNames(namesList);
     }
 
@@ -39,7 +38,7 @@ public class App
         {
             e.printStackTrace();
         }
-
+        Collections.sort(namesList);
         return namesList;
     }
 

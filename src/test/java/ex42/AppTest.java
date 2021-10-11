@@ -1,4 +1,12 @@
 package ex42;
 
-public class AppTest {
+import org.junit.Test;
+
+public class AppTest
+{
+    @Test
+    public void isFormatted()
+    {
+
+    }
 }
