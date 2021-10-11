@@ -1,12 +1,10 @@
 package ex44;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -18,12 +16,12 @@ public class App
     public static void main( String[] args )
     {
         Gson gson = new Gson();
-        try
+        try(Reader reader = new FileReader("./src/main/java/ex44/exercise44_input.json"))
         {
-            JsonReader reader = new JsonReader(new FileReader("./src/main/java/ex44/exercise44_input.json"));
-            JsonElement jsonElement = new Gson().fromJson(reader, JsonElement.class);
+            ProductList products = gson.fromJson(reader, ProductList.class);
+            System.out.println(products.products[0].name);
         }
-        catch (FileNotFoundException e)
+        catch (IOException e)
         {
             e.printStackTrace();
         }
@@ -40,14 +38,12 @@ public class App
 
 class Product
 {
-    private String name;
-    private float price;
-    private int quantity;
+    String name;
+    float price;
+    int quantity;
+}
 
-    public Product(String name, float price, int quantity)
-    {
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-    }
+class ProductList
+{
+    Product[] products;
 }
