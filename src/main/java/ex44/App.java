@@ -1,8 +1,10 @@
 package ex44;
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution
+ *  Copyright 2021 Cameron McDougal
+ */
 
 import com.google.gson.Gson;
-
-import javax.tools.Diagnostic;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
