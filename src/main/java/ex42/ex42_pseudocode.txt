@@ -1,0 +1,18 @@
+main
+	Declare and assign an ArrayList of Strings via calling readLines
+	Pass ArrayList of Strings to printFormatted
+
+readLines
+	Declare ArrayList of Strings
+	Read file at supplied file path
+	Add a new entry to ArrayList of Strings for each line in input file
+	Close scanner
+	Catch file errors
+	return ArrayList of Strings
+
+printFormatted
+	Declare String array to hold 3 strings (splitting 3 values)
+	Print Last, First, Salary header
+	Iterate through list
+		Split ArrayList by ',' and hold Strings in String array
+		Print each value, spacing each value out evenly

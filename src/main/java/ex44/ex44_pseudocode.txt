@@ -1,0 +1,33 @@
+main
+	Set index to -1
+	Declare scanner for System.in (user input)
+	Declare and assign ProductList, products, by calling LoadJSON with a filePath
+
+	Loop while index is -1 (not found)
+	Ask the user for the product name
+	Search products with user input by calling IsFound
+	If product is not found
+		Print to the user that the product was not found
+	If the product is found, break from the loop and print the attributes of the product
+
+LoadJSON
+	Declare Gson
+	Declare ProductList
+	Assign ProductList by using gson.fromJson()
+	return generated ProductList
+	Catch file errors
+	return null if file not found or other error
+
+IsFound
+	Iterate through each Product in the Product array within ProductList
+	Compare each product.name until there is a match
+	if product name and query match
+		return index of product
+	if query is not in ProductList
+		return -1
+
+Product
+	Class that holds name, price, and quantity
+
+ProductList
+	Class that holds an array of Product classes

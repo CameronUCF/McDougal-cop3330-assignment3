@@ -1,0 +1,22 @@
+main
+	Declare Strings to hold siteName and author
+	Declare booleans to determine js and css folders
+	Declare and assign Scanner to System.in
+	Ask the user for site name
+	Set siteName to user input
+	Ask the user for author
+	Set author to user input
+	Ask the user for css and js folders
+	Set css and js flags accordingly
+	Call generateWebsite with parameters supplied by user
+
+generateWebsite
+	Create website directory if does not exist
+	Print to the user that the directory was created
+	Write file index.html with siteName as the <title> tag and author as the <meta> tag
+	Print to the user that the file was created
+	Catch any file errors
+	Create js folder if user desires
+		Print to the user that the directory was created
+	Create css folder if user desires
+		Print to the user that the directory was created

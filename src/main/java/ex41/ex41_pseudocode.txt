@@ -1,0 +1,16 @@
+main
+	Declare and assign ArrayList of Strings to each name in the input file by calling readNames
+	Call printNames to display a list of names to the user
+
+readNames
+	Declare an ArrayList of Strings
+	Read file at supplied file path
+	Add a new array list entry for each new line (\n) in the file
+	Close scanner
+	Catch any errors while opening the supplied file
+	Sort ArrayList alphabetically
+	Return sorted ArrayList
+
+printNames
+	Print a count of total number of names in the ArrayList
+	Iterate through each entry in the ArrayList and print it to the console

@@ -1,0 +1,25 @@
+main
+	Declare StringBuilder
+	Declare File to read input file
+	Declare scanner and assign to input file
+	Add each line to StringBuilder
+	Close scanner
+	Declare Map of <String, Integer> and assign by calling FindFrequency
+	Call PrintMap
+	Catch File errors
+
+FindFrequency
+	Declare TreeMap of <String, Integer>
+	Declare String array and assign by splitting input String by ' '
+	Iterate through each word
+		If current word is in Map
+			Increment value by 1
+		If current word is not in Map
+			Add new entry with word as key and default value of 1
+	return TreeMap
+
+PrintMap
+	Iterate through each key in frequency TreeMap
+		Print the key (word) to the user
+		Print asterisk equivalent to the value of the key
+		Print a new line for the next key

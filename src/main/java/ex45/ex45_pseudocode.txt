@@ -1,0 +1,15 @@
+main
+	Declare StringBuilder
+	Declare file to read
+	Declare scanner with input set to input file
+	Close scanner
+	Add each line to StringBuilder
+	Use pattern matcher to replace all instances of "utilize" with "use"
+	Print replaced string to user
+	Call WriteFile to write string to a file
+
+WriteFile
+	Declare FileWriter assigned to filePath
+	Write string to file
+	Close FileWriter
+	Catch any IO Errors
