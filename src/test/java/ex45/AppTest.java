@@ -30,7 +30,6 @@ public class AppTest
             // Removing the extra space when reading file
             sb.deleteCharAt(sb.length() - 1);
 
-            System.out.printf("%s\n%s", sb.toString(), answer);
             assertEquals(true, answer.equals(sb.toString()));
         }
         catch (FileNotFoundException e)
