@@ -1,0 +1,7 @@
+@startuml
+class App
+{
+    void main(String[] args)
+    generateWebsite(String siteName, String author, boolean jsFolder, boolean cssFolder)
+}
+@enduml

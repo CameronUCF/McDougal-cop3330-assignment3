@@ -1,0 +1,8 @@
+@startuml
+class App
+{
+    void main(String[] args)
+    Map<String, Integer> FindFrequency(String str)
+    void PrintMap(Map<String, Integer> freq)
+}
+@enduml

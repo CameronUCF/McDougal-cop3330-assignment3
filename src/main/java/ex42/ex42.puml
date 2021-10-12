@@ -1,0 +1,8 @@
+@startuml
+class App
+{
+    void main(String[] args)
+    ArrayList<String> readLines(String fileName)
+    void printFormatted(ArrayList<String> namesList)
+}
+@enduml

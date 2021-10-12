@@ -1,0 +1,7 @@
+@startuml
+class App
+{
+    void main(String[] args)
+    void WriteFile(String str, String fileName)
+}
+@enduml

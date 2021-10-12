@@ -1,0 +1,19 @@
+@startuml
+class App
+{
+    void main(String[] args)
+    ProductList LoadJSON(String filePath)
+    IsFound(ProductList proList, String query)
+}
+
+class Product
+{
+    String name
+    float price
+    int quantity
+}
+class ProductList
+{
+    Product[] products
+}
+@enduml
